@@ -21,6 +21,10 @@ A Streamlit web application that allows users to generate ATS-friendly Cover Let
 ```
 Cover Letter App/
 ├── app.py
+├── screenshots/
+│   ├── 1.png
+│   ├── 2.png
+│   └── 3.png
 └── fonts/
     ├── Oxygen.ttf
     ├── NotoSans.ttf
@@ -46,6 +50,20 @@ Cover Letter App/
 3. Choose a **font** from the dropdown (standard or custom).
 4. Click **"Generate Cover Letter PDF"**.
 5. Click the **Download button** to save the file locally.
+
+## 📸 Screenshots
+
+### 🖼️ 1. UI Look
+
+![Screenshot 1](screenshots/1.png)
+
+### ✍️ 2. After Filling Details
+
+![Screenshot 2](screenshots/2.png)
+
+### 📄 3. How PDF Looks
+
+![Screenshot 3](screenshots/3.png)
 
 ## 📦 Preloaded Fonts
 
