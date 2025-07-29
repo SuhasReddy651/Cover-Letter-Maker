@@ -10,8 +10,8 @@ import os
 
 # Predefined fonts (standard + custom)
 FONT_OPTIONS = {
-    "Arial": "Helvetica",
     "Times New Roman": "Times-Roman",
+    "Arial": "Helvetica",
     "Oxygen": "fonts/Oxygen.ttf",
     "NotoSans": "fonts/NotoSans.ttf",
     "Inter": "fonts/Inter.ttf"
@@ -60,16 +60,16 @@ def create_cover_letter_pdf(content, company_name, font_name):
 
 
 st.set_page_config(page_title="📄 Cover Letter Generator", page_icon="🖋️")
-st.title("📄 Cover Letter PDF Generator with Font Choice")
+st.title("📄 Cover Letter Generator")
 
-company_name = st.text_input("Enter Company Name")
+company_name = st.text_input("Enter Company Name").strip().replace(" ", "_")
 cover_letter_text = st.text_area(
     "Paste Your Cover Letter Text Here", height=300)
 
 selected_font = st.selectbox(
     "Choose a Font", options=list(FONT_OPTIONS.keys()))
 
-if st.button("Generate Cover Letter PDF"):
+if st.button("Generate Cover Letter PDF", type='primary'):
     if not company_name or not cover_letter_text.strip():
         st.warning("Please provide both company name and cover letter text.")
     else:
@@ -81,6 +81,7 @@ if st.button("Generate Cover Letter PDF"):
 
         st.download_button(
             label="📥 Download PDF",
+            type='primary',
             data=pdf_file,
             file_name=f"Cover_Letter_{company_name}.pdf",
             mime="application/pdf"

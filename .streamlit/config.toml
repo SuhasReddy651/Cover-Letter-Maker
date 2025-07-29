@@ -1,0 +1,12 @@
+[theme]
+    primaryColor = "#4869d9"
+    backgroundColor = "#202020"
+    secondaryBackgroundColor = "#262626"
+    textColor = "#ffffff"
+
+[server]
+    headless = true
+    enableCORS = false
+
+[ui]
+    layout = "centered"
