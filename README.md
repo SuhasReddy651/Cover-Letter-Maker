@@ -1,4 +1,4 @@
-# 📄 Cover Letter PDF Generator with Custom Font Support
+# 📄 Cover Letter PDF Generator
 
 A Streamlit web application that allows users to generate ATS-friendly Cover Letter PDFs by pasting their content, entering the company name, and selecting a desired font — including support for **Google Fonts** via locally stored `.ttf` files.
 
